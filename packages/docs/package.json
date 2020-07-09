@@ -28,6 +28,6 @@
   "scripts": {
     "start": "start-storybook --docs -p 9001 -c ./.storybook",
     "build": "build-storybook --docs -o ./dist -c ./.storybook",
-    "release": "yarn build && git checkout gh-pages && rm -rf ../../docs && mv dist ../../docs && git add -A && git commit -m \"Deploy documentation\" && git push origin gh-pages && git checkout -"
+    "release": "yarn build && git checkout gh-pages && rm -rf ../../docs && mv dist ../../docs"
   }
 }
